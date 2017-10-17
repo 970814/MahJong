@@ -13,7 +13,7 @@ public class StackCard {//牌堆
     public int pop() {//弹出牌堆顶的卡片
         return cards[--left];
     }
-    private int[] cards;
+    private int[] cards;//牌堆数据
     private int left;
     private Shuffler shuffler = new Shuffler();
 
@@ -27,8 +27,8 @@ public class StackCard {//牌堆
         return this;
     }
 
-    public String get(int index) {
-        return Constant.get(index);
+    public String get(int key) {
+        return Constant.get(key);
     }
 
     public int left() {
@@ -44,7 +44,7 @@ public class StackCard {//牌堆
 
     public StackCard show() {
         for (int i = 0; i < left(); i++) {
-            System.out.print(get(i));
+            System.out.print(get(cards[i]));
             if (i % 4 == 3) System.out.println();
         }
         return this;
@@ -52,5 +52,12 @@ public class StackCard {//牌堆
 
     void forEach(Consumer<Integer> consumer) {
         for (int key : cards) consumer.accept(key);
+    }
+
+    public void showTop(int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.print(get(cards[left() - i - 1]));
+            if (i % 4 == 3) System.out.println();
+        }
     }
 }

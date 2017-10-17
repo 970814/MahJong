@@ -1,6 +1,5 @@
 package ai;
 
-import card.Constant;
 import card.StackCard;
 
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Player {
-    List<Integer> cards;
+    List<Integer> keys;
     private StackCard stackCard;//牌堆
     private Brain myBrain;
     int pendingCard = -1;//待处理的卡片
@@ -21,7 +20,7 @@ public class Player {
     public Player(StackCard card, Brain brain) {
         stackCard = card;
         myBrain = brain;
-        cards = new ArrayList<>(20);
+        keys = new ArrayList<>(20);
     }
 
     private void offerCard(int count) {
@@ -36,7 +35,7 @@ public class Player {
 
     public int pollCard() {//出牌
         //先默认出第一张
-        return cards.remove(0);
+        return keys.remove(0);
     }
 
     private void offer() {
@@ -45,8 +44,8 @@ public class Player {
     }
 
     private int removeSameCard(int otherKey, int n) {
-        //删掉与otherKey相同的n张牌
-        Iterator<Integer> each = cards.iterator();
+        //删掉与otherKey相同的n张牌,返回实际删除的牌
+        Iterator<Integer> each = keys.iterator();
         int count = 0;
         while (each.hasNext() && count < n)
             if (each.next() == otherKey) {
@@ -70,10 +69,17 @@ public class Player {
 
     List<Face> faces = new ArrayList<>();//面子,就牌
 
-    public Player show() {
-        for (Integer card : cards)
-            System.out.print(Constant.get(card) + " ");
+     Player show() {
+        for (Integer card : keys)
+            System.out.print(stackCard.get(card) + " ");
         System.out.println();
+        return this;
+    }
+
+    Player showCard() {
+        int count = 4;
+        System.out.println("show top: " + count);
+        stackCard.showTop(count);
         return this;
     }
 }

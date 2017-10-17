@@ -3,21 +3,21 @@ package card;
 import ai.Player;
 
 public class CardAnalyzer {
-    private static int K = 9 << 2;
+    private static int K = 9;
     public static boolean isW(int key) {
         return 0 <= key && key < K;
     }
 
     public static boolean isS(int key) {
-        return K <= key && key < K + K;
+        return K <= key && key < 2 * K;
     }
 
     public static boolean isT(int key) {
-        return 2 * K <= key && key < 2 * K + K;
+        return 2 * K <= key && key < 3 * K;
     }
 
     public static boolean isCharacter(int key) {
-        return 3 * K <= key && key < 3 * K + 28;
+        return 3 * K <= key && key < 3 * K + Constant.characterTypeCount();
     }
 
     public int analysis(Player player) {

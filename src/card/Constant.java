@@ -3,29 +3,25 @@ package card;
 public class Constant {
     public static final int K = 9;//1种数牌有9张不同的卡
     public static final int M = 4;//同一张卡有4张重复的
-    private static final String[] Map;//通过key得到这张牌
     private static final int[] keys;//初始状态下的牌
-    private static final String[] cardType;//生成不同的牌
-    private static char[] D = {'萬', '索', '筒',};
-    private static char[] C = {'東', '南', '西', '北', '中', '發', '白',};
-    private static char[] I = {'一', '二', '三', '四', '伍', '六', '七', '八', '九',};
-
+    private static final String[] Map;//通过key得到这张牌
+    private static char[] NumberType = {'萬', '索', '筒',};
+    private static char[] Character = {'東', '南', '西', '北', '中', '發', '白',};
+    private static char[] OrdinalNumber = {'一', '二', '三', '四', '伍', '六', '七', '八', '九',};
+    public static final int CharacterOffset = K * NumberType.length;//东的key值
     static {
-        cardType = new String[cardTypeCount()];
-        for (int i = 0; i < D.length; i++)
+        Map = new String[cardTypeCount()];
+        for (int i = 0; i < NumberType.length; i++)
             for (int j = 0; j < K; j++)
-                cardType[i * K + j] = new String(new char[]{I[j], D[i]});
-        int offset = K * D.length;
-        for (int i = offset; i < cardType.length; i++)
-            cardType[i] = String.valueOf(C[i - offset]);
+                Map[i * K + j] = new String(new char[]{OrdinalNumber[j], NumberType[i]});
+        for (int i = CharacterOffset; i < Map.length; i++)
+            Map[i] = String.valueOf(Character[i - CharacterOffset]);
 
-        Map = new String[cardType.length * M];
-        keys = new int[Map.length];
-        for (int i = 0; i < cardType.length; i++)
-            for (int j = 0; j < M; j++) {
-                int x = i * M + j;
-                Map[keys[x] = x] = cardType[i];
-            }
+        keys = new int[Map.length * 4];
+        for (int i = 0; i < Map.length; i++)
+            for (int j = 0, x = i * M; j < M; j++)
+                keys[x + j] = i;
+//                Map[keys[x + j] = x / 4] = Map[i];
     }
 
     public static int[] getCards() {
@@ -37,13 +33,20 @@ public class Constant {
     }
 
     public static int cardTypeCount() {
-        return K * D.length + C.length;
+        return K * numberTypeCount() + characterTypeCount();
     }
     public static int cardCount() {
-        return cardTypeCount() * 4;
+        return cardTypeCount() * M;
     }
 
+    public static int characterTypeCount() {
+        return Character.length;
+    }
+    public static int numberTypeCount() {
+        return NumberType.length;
+    }
     public static void main(String[] args) {
-
+        for (int key : keys)
+            System.out.println(key + ":" + get(key));
     }
 }
