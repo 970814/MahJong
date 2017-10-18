@@ -1,12 +1,12 @@
 package ai;
 
-public class Face {//一就牌
+public abstract class Face {//一就牌
 
     public static class Series extends Face {//顺子,仅仅只能是数牌
-        protected int firstKey;//1=<firstKey<=7
+        protected int lastKey;//3=<lastKey<=9
 
-        public Series(int firstKey) {
-            this.firstKey = firstKey;
+        public Series(int lastKey) {
+            this.lastKey = lastKey;
         }
     }
     public static class Same extends Face {//刻子，或者是碰
@@ -23,10 +23,12 @@ public class Face {//一就牌
             super(sameKey);
             this.type = type;
         }
-
-        public int type;//杠的类型
+        private int type;//杠的类型
         public static final int MingGang = 0;
         public static final int BiaoGang = MingGang + 1;
         public static final int AnGang = BiaoGang + 1;
+        public int getType() {
+            return type;
+        }
     }
 }

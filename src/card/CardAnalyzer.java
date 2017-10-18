@@ -26,7 +26,7 @@ public class CardAnalyzer {
     }
 
     public static void main(String[] args) {
-//        for (int i = 0; i < cardCount(); i++) {
+//        for (int i = 0; i < keyCount(); i++) {
 ////            if (isW(i)) System.out.println(get(i));
 ////            if (isS(i)) System.out.println(get(i));
 ////            if (isT(i)) System.out.println(get(i));

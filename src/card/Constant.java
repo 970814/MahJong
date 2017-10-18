@@ -10,7 +10,7 @@ public class Constant {
     private static char[] OrdinalNumber = {'一', '二', '三', '四', '伍', '六', '七', '八', '九',};
     public static final int CharacterOffset = K * NumberType.length;//东的key值
     static {
-        Map = new String[cardTypeCount()];
+        Map = new String[differentKeyCount()];
         for (int i = 0; i < NumberType.length; i++)
             for (int j = 0; j < K; j++)
                 Map[i * K + j] = new String(new char[]{OrdinalNumber[j], NumberType[i]});
@@ -32,11 +32,11 @@ public class Constant {
         return Map[key];
     }
 
-    public static int cardTypeCount() {
+    public static int differentKeyCount() {
         return K * numberTypeCount() + characterTypeCount();
     }
-    public static int cardCount() {
-        return cardTypeCount() * M;
+    public static int keyCount() {
+        return differentKeyCount() * M;
     }
 
     public static int characterTypeCount() {
