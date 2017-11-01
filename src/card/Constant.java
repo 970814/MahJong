@@ -45,6 +45,10 @@ public class Constant {
     public static int numberTypeCount() {
         return NumberType.length;
     }
+
+    public static int numberCount() {
+        return K;
+    }
     public static void main(String[] args) {
         for (int key : keys)
             System.out.println(key + ":" + get(key));

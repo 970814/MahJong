@@ -1,6 +1,6 @@
 package hu;
 
-import ai.Face;
+import card.Group;
 
 import java.util.Arrays;
 
@@ -13,21 +13,21 @@ public abstract class Hu {
     public static final int BySelf = Fired + 1;//自摸
     public static final int Grab = BySelf + 1;//抢杠
     public static class Common extends Hu {
-        protected Face[] faces;
+        protected Group[] groups;
 
-        public Common(int type, Face[] faces) {
+        public Common(int type, Group[] groups) {
             super(type);
-            this.faces = faces;
+            this.groups = groups;
         }
 
         @Override
         public String toString() {
-            return Arrays.toString(faces);
+            return Arrays.toString(groups);
         }
     }
     public static class SPCommon extends Common {
-        public SPCommon(int type, Face[] faces) {
-            super(type, faces);
+        public SPCommon(int type, Group[] groups) {
+            super(type, groups);
         }
     }
 }

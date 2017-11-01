@@ -1,6 +1,7 @@
 package ai;
 
-import card.CardAnalyzer;
+import card.Group;
+import card.KeyAnalyzer;
 import card.Constant;
 import card.StackCard;
 import hu.Hu;
@@ -37,9 +38,9 @@ public class Brain {
 //                .offerCard().show().showCard()
 //                .offerCard().show().showCard();
 //
-//        List<Face> faces = new ArrayList<>();
-//        new Brain().extractFaces(Arrays.asList(1, 1, 1, 1, 3, 3), faces);
-//        System.out.println(faces);
+//        List<Group> groups = new ArrayList<>();
+//        new Brain().extractFaces(Arrays.asList(1, 1, 1, 1, 3, 3), groups);
+//        System.out.println(groups);
         Player player = new Player(new StackCard().wash().show(), new Brain())
                 .offerCard(13);
         while (true) {
@@ -70,27 +71,27 @@ public class Brain {
         List<Integer> ts = new ArrayList<>();//筒
         List<Integer>[] characters = new List[Constant.characterTypeCount()];//東南西北中發白
         classify(keys, ws, ss, ts, characters);//把牌分类
-        List<Face> faces = new ArrayList<>();
-        extractFaces(ws, faces);
-        extractFaces(ss, faces);
-        extractFaces(ts, faces);
-        extractFacesFromCharacter(characters, faces);
-        faces.addAll(player.faces);
-        if (faces.size() == 4) {//不可能超过个4个面子
+        List<Group> groups = new ArrayList<>();
+//        extractFaces(ws, groups);
+//        extractFaces(ss, groups);
+//        extractFaces(ts, groups);
+//        extractFacesFromCharacter(characters, groups);
+        groups.addAll(player.groups);
+        if (groups.size() == 4) {//不可能超过个4个面子
             int pairKey = findFirstPair(keys);
             if (pairKey != -1) {//平胡
-                Face[] faceArray = new Face[4];
+                Group[] groupArray = new Group[4];
                 boolean common = false;
-                for (int i = faceArray.length - 1; i >= 0; i--) {
-                    Face face = faceArray[i] = faces.get(i);
-                    if (!common && !(face instanceof Face.Same))//只要某一就牌不满足刻子牌，那么就是平胡
+                for (int i = groupArray.length - 1; i >= 0; i--) {
+                    Group group = groupArray[i] = groups.get(i);
+                    if (!common && !(group instanceof Group.Same))//只要某一就牌不满足刻子牌，那么就是平胡
                         common = true;
                 }
-                return common ? new Hu.Common(type, faceArray) : new Hu.SPCommon(type, faceArray);
+                return common ? new Hu.Common(type, groupArray) : new Hu.SPCommon(type, groupArray);
             }
         }
 
-//        int faceCount = player.faces.size() +player.
+//        int faceCount = player.groups.size() +player.
 
         return null;
     }
@@ -105,13 +106,17 @@ public class Brain {
         return -1;//不存在对子
     }
 
-    private void extractFacesFromCharacter(List<Integer>[] characters, List<Face> faces) {
-        for (List<Integer> character : characters)
-            if (character != null && character.size() > 2) //每种字牌大于2张就能形成一个刻子
-                faces.add(new Face.Same(character.get(0)));
+    void extractFacesFromCharacter(Player player) {
+//        List<Integer>[] characters = player.characters;
+        List<Group> groups = player.groups;
+//        for (List<Integer> character : characters)
+//            if (character != null && character.size() > 2) //每种字牌大于2张就能形成一个刻子
+//                groups.add(new Group.Same(character.get(0)));
     }
 
-    private void extractFaces(List<Integer> keys, List<Face> faces) {
+    void extractFaces(Player player) {
+        List<Integer> keys = player.keys;
+        List<Group> groups = player.groups;
         //找出顺子和刻子
         if (keys.size() < 3) return;
         Integer base = null;
@@ -135,26 +140,25 @@ public class Brain {
                 } else count++;
             } else throw new RuntimeException("base: " + base + ", key:  " + key);
             if (count == 3) {
-                faces.add(same ?
-                        new Face.Same(base)//刻子
+                groups.add(same ?
+                        new Group.Same(base)//刻子
                         :
-                        new Face.Series(base));//顺子
+                        new Group.Series(base));//顺子
                 base = null;
             }
         }
-
     }
 
     private void classify(List<Integer> keys, List<Integer> ws, List<Integer> ss, List<Integer> ts, List<Integer>[] characters) {
         //把牌分类
         for (Integer key : keys) {
-            if (CardAnalyzer.isW(key))
+            if (KeyAnalyzer.isW(key))
                 ws.add(key);
-            else if (CardAnalyzer.isS(key))
+            else if (KeyAnalyzer.isS(key))
                 ss.add(key);
-            else if (CardAnalyzer.isT(key))
+            else if (KeyAnalyzer.isT(key))
                 ts.add(key);
-            else if (CardAnalyzer.isCharacter(key))
+            else if (KeyAnalyzer.isCharacter(key))
                 if (characters[key - Constant.CharacterOffset] == null)
                     characters[key - Constant.CharacterOffset] = new ArrayList<>();
                 else characters[key - Constant.CharacterOffset].add(key);
