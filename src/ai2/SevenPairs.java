@@ -1,45 +1,46 @@
 package ai2;
 
-import other.AgariIndex;
-
-import java.util.Arrays;
 import java.util.HashSet;
+
+import static ai2.Compose6.printTable;
+import static ai2.Compose6.search;
+
 
 @SuppressWarnings("Duplicates")
 public class SevenPairs {
     static void addSevenPair(HashSet<Integer> shapes) {//Ass
-        byte[] h13 = new byte[34];
+        byte[] h34 = new byte[34];
         for (int i = 0; i < 7; i++)
-            h13[i] += 2;
-        traverse(shapes, h13, 0, 6);
-        System.out.println(Arrays.toString(h13));
+            h34[i] += 2;
+        traverse(shapes, h34, 0, 6);
+//        System.out.println(shapes.size());
+//        System.out.println(Arrays.toString(h34));
     }
 
-    private static void traverse(HashSet<Integer> shapes, byte[] h13, int L, int H) {
-        if (L < H) traverse(shapes, h13, L + 1, H);
+    private static void traverse(HashSet<Integer> shapes, byte[] h34, int L, int H) {
+        if (L < H) traverse(shapes, h34, L + 1, H);
         else {
             byte[] copy = null;
-            if (h13[9] != 0) {//保证形状没有被破坏
-//                System.out.println(Arrays.toString(h13));
-                copy = h13.clone();
+            if (h34[9] != 0) {//保证形状没有被破坏
+                copy = h34.clone();
                 int from;
-                for (from = 8; from >= 0; from--) if (h13[from] == 0) break;
-                if (h13[from] == 0) from++;//因为只有7对，所以from不可能为0,if必然为真
-                System.arraycopy(h13, from, h13, 9, H - from + 1);
-                for (int i = from; i < 9; i++) h13[i] = 0;//这些要归零
+                for (from = 8; from >= 0; from--) if (h34[from] == 0) break;
+                if (h34[from] == 0) from++;//因为只有7对，所以from不可能为0,if必然为真
+                System.arraycopy(h34, from, h34, 9, H - from + 1);
+                for (int i = from; i < 9; i++) h34[i] = 0;//这些要归零
             }
-            int shape = Shape.shapeOfGroup(h13);
-            System.out.println(Arrays.toString(h13) + " Shape: " + Integer.toHexString(shape));
-            shapes.add(shape);
+            int shape = Shape.shapeOfGroup(h34);
+            if (shapes.add(shape))
+                printTable(shape, search(h34), true);
             if (copy != null)
-                System.arraycopy(copy, 0, h13, 0, copy.length);
+                System.arraycopy(copy, 0, h34, 0, copy.length);
             return;
         }
-        System.arraycopy(h13, L + 1, h13, L + 2, H - L);
-        h13[L + 1] = 0;
-        traverse(shapes, h13, L + 2, H + 1);
-        System.arraycopy(h13, L + 2, h13, L + 1, H - L);
-        h13[H + 1] = 0;
+        System.arraycopy(h34, L + 1, h34, L + 2, H - L);
+        h34[L + 1] = 0;
+        traverse(shapes, h34, L + 2, H + 1);
+        System.arraycopy(h34, L + 2, h34, L + 1, H - L);
+        h34[H + 1] = 0;
     }
 
     //Java 的arraycopy是先搬运到一个内存，在搬运到指定位置,类似memcpy
@@ -54,7 +55,7 @@ public class SevenPairs {
         HashSet<Integer> shapes = new HashSet<>();
         addSevenPair(shapes);
 //        for (Integer shape : shapes) System.out.println(shape);
-        System.out.println(shapes.size());
+//        System.out.println(shapes.size());
 //        2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 0,
 //        2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2,
 

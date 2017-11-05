@@ -3,53 +3,13 @@ package ai2;
 import card.Group;
 import card.KeyAnalyzer;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 import static card.Constant.CharacterOffset;
 
 @SuppressWarnings("Duplicates")
 public class EnumGroup {
-    public static HashSet<List<Group>> enumCommon(byte[] map) {
-        HashSet<List<Group>> combination = new HashSet<>();
-        enumCommon(map, 0, new Stack<>(), combination);
-        return combination;
-    }
-    //枚举出所有的可能，复杂度T(n) = 2T(n-1) = O(2^n) = O(2^4 = n) = O(n)
-    //1, 1, 1, 1, 2, 3, 4, 4, 4, 4, 5, 6 出现4种同一个组合
-    private static void enumCommon(byte[] map, int from, Stack<Group> groups, HashSet<List<Group>> combination) {
-        int key = findFirstNotZeroKey(map, from);
-        if (key >= map.length) {
-            unique(combination, groups);
-            return;
-        }
-        if (map[key] >= 3) {//case 1
-            map[key] -= 3;
-            groups.add(new Group.Same(key));
-            enumCommon(map, from, groups, combination);//recursive call枚举接下来的组合
-            //restore
-            groups.pop();
-            map[key] += 3;
-        }
-//        if (map[key] < 4)//1, 1, 1, 1, 2, 3, 4, 4, 4, 4, 5, 6 避免出现4种同一个组合的不同排列重复情况
-        //map[key] must > 0
-        if (key < CharacterOffset - 2 //首先只能是数牌才可能形成顺子
-                && canFormSeries(map, key, key + 1, key + 2)) {
-            map[key]--;
-            map[key + 1]--;
-            map[key + 2]--;
-            groups.add(new Group.Series(key + 2));
-            enumCommon(map, key, groups, combination);//recursive call枚举接下来的组合
-            //restore
-            groups.pop();
-            map[key]++;
-            map[key + 1]++;
-            map[key + 2]++;
-        }
-        //不能形成刻子，也不能形成顺子，那这就是孤立的牌，不能胡
-    }
+
     public static int findFirstNotZeroKey(byte[] map, int fomKey) {
         int size = map.length;
         int key;
@@ -73,8 +33,58 @@ public class EnumGroup {
         return w || s || t;//符合其中任何一个类型即可
     }
 
-    public static void unique(HashSet<List<Group>> groups, Stack<Group> newGroup) {
-
+    private static void unique(List<int[]> set, int[] msg) {
+        for (int[] m : set)
+            if (m[0] == msg[0] && m[1] == msg[1]) {
+                boolean equal = true;
+                for (int i = 0; i < msg[0]; i++)
+                    if (m[2 + i] != msg[2 + i]) {
+                        equal = false;
+                        break;
+                    }
+                if (equal)
+                    for (int i = 0; i < msg[1]; i++)
+                        if (m[6 + i] != msg[6 + i]) {
+                            equal = false;
+                            break;
+                        }
+                if (equal)
+                    return;//如果已经存在相同的牌型,忽略
+            }
+        set.add(msg.clone());
     }
 
+
+
+    //h34是在无对子的情况下选择的
+    public static void enumUnique(List<int[]> set, int fromKey, int[] msg, byte[] h34) {
+        for (; fromKey < 34; fromKey++)
+            if (h34[fromKey] > 0)
+                break;
+        if (fromKey == 34) {//如果没牌了
+            unique(set, msg);
+            return;
+        }
+        if (h34[fromKey] >= 3) {//case 1
+            h34[fromKey] -= 3;
+            msg[2 + msg[0]++] = fromKey;
+            enumUnique(set, fromKey, msg, h34);//recursive call枚举接下来的组合
+            msg[0]--;
+            h34[fromKey] += 3;
+        }
+        if (fromKey < CharacterOffset - 2 //首先只能是数牌才可能形成顺子
+                && canFormSeries(h34, fromKey, fromKey + 1, fromKey + 2)) {
+            h34[fromKey]--;
+            h34[fromKey + 1]--;
+            h34[fromKey + 2]--;
+            msg[6 + msg[1]++] = fromKey;
+            enumUnique(set, fromKey, msg, h34);//recursive call枚举接下来的组合
+            //restore
+            msg[1]--;
+            h34[fromKey]++;
+            h34[fromKey + 1]++;
+            h34[fromKey + 2]++;
+        }
+        //不能形成刻子，也不能形成顺子，那这就是孤立的牌，不能胡
+    }
 }
