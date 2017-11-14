@@ -147,8 +147,8 @@ public class Compose {
 //                                        int diff = ks[2][1] - ks[2][0];
 //                                        int count = 3 - Math.abs(diff);//重叠次数，不存在相应对子
 //                                        if (count > 0) {
-//                                            list.add(diff > 0 ? ks[2][0] + 2 : ks[2][0]);//考虑两端重叠的部分
-//                                            if (count == 2) list.add(ks[2][0] + 1);
+//                                            list.addGang(diff > 0 ? ks[2][0] + 2 : ks[2][0]);//考虑两端重叠的部分
+//                                            if (count == 2) list.addGang(ks[2][0] + 1);
 //                                        }
 //                                    } else {//1种顺子重复2次+2种各出现一次的顺子
 //                                        boolean[] h = new boolean[21];
@@ -157,7 +157,7 @@ public class Compose {
 //                                                h[k2 + i] = true;//覆盖区域
 //                                        for (int i = 0; i < 3; i++)
 //                                            if (h[ks[2][0] + i])//如果这些区域被覆盖了，那么则这段区域不能存在相应对子
-//                                                list.add(ks[2][0] + i);
+//                                                list.addGang(ks[2][0] + i);
 //                                    }
 //                                    for (Integer x : list)
 //                                        if (p != x) {
@@ -242,7 +242,7 @@ public class Compose {
 //                                            p, p,
 //                                    };
 //                                    Arrays.sort(pendingGroup);
-//                                    threeSeries.add(byteToString(pendingGroup).intern());
+//                                    threeSeries.addGang(byteToString(pendingGroup).intern());
 ////                                    if (!isValidGroup(pendingGroup)) {
 ////                                        System.exit(1);
 ////                                    }
@@ -268,7 +268,7 @@ public class Compose {
 //                                                p, p,
 //                                        };
 //                                        Arrays.sort(pendingGroup);
-//                                        twoSeries.add(byteToString(pendingGroup).intern());
+//                                        twoSeries.addGang(byteToString(pendingGroup).intern());
 ////                                        if (!isValidGroup(pendingGroup)) {
 ////                                            System.exit(1);
 ////                                        }
@@ -298,7 +298,7 @@ public class Compose {
 //                                                p, p,
 //                                        };
 //                                        Arrays.sort(pendingGroup);
-//                                        oneSeries.add(byteToString(pendingGroup).intern());
+//                                        oneSeries.addGang(byteToString(pendingGroup).intern());
 ////                                        if (!isValidGroup(pendingGroup)) {
 ////                                            System.exit(1);
 ////                                        }
@@ -330,7 +330,7 @@ public class Compose {
 //                                                    p, p,
 //                                            };
 //                                            Arrays.sort(pendingGroup);
-//                                            allSames.add(byteToString(pendingGroup).intern());
+//                                            allSames.addGang(byteToString(pendingGroup).intern());
 ////                                            if (!isValidGroup(pendingGroup)) {
 ////                                                System.exit(1);
 ////                                            }

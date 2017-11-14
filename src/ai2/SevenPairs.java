@@ -1,14 +1,18 @@
 package ai2;
 
+import makeTable.Maker;
+import makeTable.Printer;
+import makeTable.Shape;
+
 import java.util.HashSet;
 
-import static ai2.Compose6.printTable;
-import static ai2.Compose6.search;
+import static makeTable.Maker.printTable;
+import static makeTable.Maker.search;
 
 
 @SuppressWarnings("Duplicates")
 public class SevenPairs {
-    static void addSevenPair(HashSet<Integer> shapes) {//Ass
+    public static void addSevenPair(HashSet<Integer> shapes) {//Ass
         byte[] h34 = new byte[34];
         for (int i = 0; i < 7; i++)
             h34[i] += 2;
@@ -49,7 +53,7 @@ public class SevenPairs {
 //        byte[] h13 = {2, 2, 2, 0, 2, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 //        byte[] h13 = {2, 2, 2, 0, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 //        byte[] h13 = {2, 2, 2, 0, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-
+        Maker.printer = new Printer("Compose.java");
 //        move(h13, 6, 8);
 //        System.out.println(Arrays.toString(h13));
         HashSet<Integer> shapes = new HashSet<>();
@@ -74,5 +78,6 @@ public class SevenPairs {
 //        System.out.println(Arrays.toString(analyse) + AgariIndex.calc_key(analyse, new int[34]));
 //        int[] analyse2 = AgariIndex.analyse(ar2);
 //        System.out.println(Arrays.toString(analyse2) + AgariIndex.calc_key(analyse2, new int[34]));
+
     }
 }

@@ -1,11 +1,10 @@
 package other;
 
-import ai2.Shape;
+import makeTable.Shape;
 import card.Constant;
 
 import java.util.Arrays;
 import java.util.TreeMap;
-import java.util.regex.Pattern;
 
 public class AgariIndex {
     static final int[] n_zero = new int[34];

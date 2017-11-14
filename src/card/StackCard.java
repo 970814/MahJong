@@ -7,7 +7,12 @@ import static card.Constant.getCards;
 public class StackCard {//牌堆
     public StackCard() {
         cards = getCards();
+        reset();
+    }
+
+    public StackCard reset() {
         left = cards.length;
+        return this;
     }
 
     public int pop() {//弹出牌堆顶的卡片

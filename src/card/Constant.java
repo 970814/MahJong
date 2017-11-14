@@ -53,4 +53,11 @@ public class Constant {
         for (int key : keys)
             System.out.println(key + ":" + get(key));
     }
+
+    public static int get(String word) {
+        for (int i = 0, mapLength = Map.length; i < mapLength; i++)
+            if (Map[i].equals(word))
+                return i;
+        throw new RuntimeException("no such card: " + word);
+    }
 }

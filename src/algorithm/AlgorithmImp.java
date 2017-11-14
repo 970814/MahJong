@@ -40,7 +40,7 @@ public class AlgorithmImp {
                 map[key]--;
                 map[key + 1]--;
                 map[key + 2]--;
-                groups.add(new Group.Series(key + 2));
+                groups.add(new Group.Series(key));
                 enumCommon(map, key, groups, combination);//recursive call枚举接下来的组合
                 //restore
                 groups.pop();
@@ -74,7 +74,7 @@ public class AlgorithmImp {
                 map[key]--;
                 map[key + 1]--;
                 map[key + 2]--;
-                groups.add(new Group.Series(key + 2));
+                groups.add(new Group.Series(key));
                 ret = common(map, key, groups);
                 map[key]++;
                 map[key + 1]++;

@@ -17,7 +17,7 @@ import static card.Constant.*;
 public class Judge {
 
     public void common(Player player) {
-        common(player.map.clone(), map -> false);
+//        common(player.map.clone(), map -> false);
     }
 
     public static class Combination {
@@ -140,7 +140,7 @@ public class Judge {
                         System.out.print(same + "(" + kh[ints[2 + i]] + "), ");
                     }
                     for (int i = 0; i < ints[1]; i++) {
-                        Group.Series series = new Group.Series(ints[6 + i] + 2);
+                        Group.Series series = new Group.Series(ints[6 + i]);
                         System.out.print(series + "(" + kh[ints[6 + i]] + "), ");
                     }
                     System.out.println();

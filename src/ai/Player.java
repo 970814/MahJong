@@ -9,54 +9,157 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import static card.KeyAnalyzer.*;
-
 public class Player {
-    List<Integer> keys;
-    private StackCard stackCard;//牌堆
-    private Brain myBrain;
-    int pendingKey = -1;//待处理的卡片
-    private int type;
+    private Controller controller;
 
-    public int getType() {
-        return type;
+    public void setController(Controller controller) {
+        this.controller = controller;
     }
 
+    Player next;
+
+    public void setNext(Player next) {
+        this.next = next;
+    }
+
+    public Player getNext() {
+
+        return next;
+    }
+
+
+    class Msg {
+        Player who = Player.this;
+
+        public Msg(int[] hu) {
+            this.hu = hu;
+        }
+
+        public Msg(int x, int type) {
+            this.x = x;
+            this.type = type;
+        }
+
+        int[] hu;
+        int x;//可能是随便打出的一张牌，也可能是控制player各种Gang的方法的参数
+        int type;//碰或各种杠是什么类型
+
+        public Player getWho() {
+            return who;
+        }
+    }
+    public List<Integer> keys;
+    int[] h34;
+    private StackCard stackCard;//牌堆
+    private Brain myBrain;
+    private int type;
+
     public Player(StackCard card, Brain brain) {
+        this.controller = controller;
         stackCard = card;
         myBrain = brain;
         keys = new ArrayList<>(20);
+        h34 = new int[34];
     }
 
+    int last = -1;
     public Player offerCard(int count) {
-        for (int i = count; i > 0; i--)
-            offer();//抓牌细节
+        for (int i = count; i > 0; i--) {
+            int key = stackCard.pop();//牌堆弹出一张牌
+            last = myBrain.arrangeKey(keys, key);//排序整理好牌
+            h34[key]++;
+        }
         return this;
-    }
-
-    public Player offerCard() {//抓牌
-        return offerCard(1);
     }
 
     public int pollCard() {//出牌
         //先默认出第一张
-        return keys.remove(0);
+        int index = controller.poll(keys.size());//由控制器来决定出哪一张牌
+        int key = keys.remove(index);
+        h34[key]--;
+        System.out.println(this + "打出一张：" + Constant.get(key) + "位置在: " + index);
+        show();
+        return key;
     }
 
-    private void offer() {
+    public Msg poll() {
+        return new Msg(pollCard(), Group.Other);
+    }
+
+    public Msg offer() {
+        //如果牌被摸完了
+        if (stackCard.left() == 0) return new Msg(-1, Group.CardIsEmpty);
         type = Hu.BySelf;//自摸
-        pendingKey = stackCard.pop();//牌堆弹出一张牌
-        myBrain.arrangeKey(keys, pendingKey);//排序整理好牌
-        classify(pendingKey);//hashMap分类
-        if (keyCount() < 13)
-             myBrain.arrange(this);
+        offerCard(1);
+        System.out.println(this + "摸到一张：" + Constant.get(keys.get(last)));
+        show();
+        Brain.Message message = myBrain.analysis(this);
+        if (message.hu != null) {
+            if (controller.hu())//由控制器来决定是否要胡
+                return new Msg(message.hu);//能胡则胡，
+        }
+        if (message.ABgang != null)//随便选一个杠
+            for (Integer x : message.ABgang)//能杠则杠
+                if (x < 0) {
+                    if (controller.gang())
+                        return new Msg(-x - 1, Group.AnGang);//告诉服务器自己接下来要做的事情
+                } else {
+                    if (controller.gang())
+                        return new Msg(x, Group.BiaoGang);
+                }
+        return poll();
     }
 
-    public int keyCount() {
-        return keys.size() + groups.size() * 3;//一就牌认为是3张牌
+    public Msg listen(int key, boolean qiangGang) {
+        type = Hu.Fired;//点炮
+        Brain.Message message = myBrain.analysis(this, key);
+        if (message.hu != null) {
+            if (controller.hu())
+                return new Msg(message.hu);//能胡则胡，
+        }
+        if (!qiangGang && message.key != -1) {//碰，杠不能抢杠
+            if (message.isPeng) {//能碰则碰，
+                if (controller.peng())
+                    return new Msg(key, Group.Peng);
+            } else {//能杠则杠
+                if (controller.gang())
+                    return new Msg(key, Group.MingGang);
+            }
+        }
+        return null;
+    }
+
+    void AnGang(int otherKey) {
+        int count = removeSameCard(otherKey, 4);
+        if (count < 4) throw new RuntimeException("an ABgang should remove 4, but remove: " + count);
+        else groups.add(new Group.$Same(otherKey,  Group.AnGang, null));//加一就牌
+        show();
+    }
+
+    void BiaoGang(int where) {
+        Group.Same same = (Group.Same) groups.get(where);
+        int count = removeSameCard(same.getKey(), 1);//表杠删掉一张手牌
+        if (count < 1) throw new RuntimeException("biao ABgang should remove 1, but remove: " + count);
+        else groups.set(where, new Group.$Same(same.getKey(), Group.BiaoGang, same.getWho()));
+        show();
+    }
+
+    void MingGang(int otherKey, Player who) {//删掉手上3张牌
+        int count = removeSameCard(otherKey, 3);
+        if (count < 3) throw new RuntimeException("peng should remove 3, but remove: " + count);
+        else groups.add(new Group.$Same(otherKey, Group.MingGang, who));
+        show();
+    }
+
+    void Peng(int otherKey, Player who) {//删掉2张牌
+        int count = removeSameCard(otherKey, 2);
+        if (count < 2) throw new RuntimeException("peng should remove 2, but remove: " + count);
+        else groups.add(new Group.Same(otherKey, who));//加一就牌
+        show();
     }
 
     private int removeSameCard(int otherKey, int n) {
+        h34[otherKey] -= n;
         //删掉与otherKey相同的n张牌,返回实际删除的牌
         Iterator<Integer> each = keys.iterator();
         int count = 0;
@@ -68,24 +171,30 @@ public class Player {
         return count;
     }
 
-    void Peng(int otherKey) {//删掉2张牌
-        int count = removeSameCard(otherKey,2);
-        if (count < 2) throw new RuntimeException("peng should remove 2, but remove: " + count);
-        else groups.add(new Group.Same(otherKey));//加一就牌
-    }
 
-    void Gang(int otherKey, int type) {//删掉3张牌
-        int count = removeSameCard(otherKey,3);
-        if (count < 3) throw new RuntimeException("gang should remove 3, but remove: " + count);
-        else groups.add(new Group.$Same(otherKey, type));//加一就牌
-    }
+
 
     List<Group> groups = new ArrayList<>();//面子,就牌
+    private void show() {
+        System.out.println("---------------start----------------");
+        show2();
+        Player p = this.next;
+        while (p != this) {
+            p.show2();
+            p = p.next;
+        }
+        System.out.println("---------------end----------------");
+    }
+    Player show2() {
 
-     Player show() {
+
+
+        System.out.printf(String.valueOf(keys.size())+": ");
+
         for (Integer card : keys)
             System.out.print(stackCard.get(card) + " ");
-        System.out.println();
+//            System.out.print(card + " ");
+        System.out.println(this + groups.toString());
         return this;
     }
 
@@ -94,80 +203,5 @@ public class Player {
         System.out.println("show top: " + count);
         stackCard.showTop(count);
         return this;
-    }
-
-//    int[] ws = new int[K];//1-9万
-//    int[] ss = new int[ws.length];//1-9索
-//    int[] ts = new int[ss.length];//1-9筒
-//    int[] cs = new int[Constant.characterTypeCount()];//東南西北中發白(7)
-    int[] map = new int[Constant.keyCount()];
-    private void classify(int key) {
-        map[key]++;
-//        //把牌分类
-//        if (KeyAnalyzer.isW(key))
-//            ws[key - wOffset()]++;
-//        else if (KeyAnalyzer.isS(key))
-//            ss[key - sOffset()]++;
-//        else if (KeyAnalyzer.isT(key))
-//            ts[key - tOffset()]++;
-//        else if (KeyAnalyzer.isCharacter(key))
-//            cs[key - cOffset()]++;
-//        else throw new NoSuchElementException("key: " + key);
-    }
-    void extractFaces(Player player) {
-        List<Group> handGroups = new ArrayList<>();
-
-        for (int i = wOffset(); i < sOffset(); i++) {
-            int x = map[i];
-            if (x > 0) {//至少要有一张某种牌才考虑
-                /**
-                 * 111,222,333,45,666
-                 * 111,222,333,4445,6,
-                 * 111,222,333,444,56  4
-                 * 111,234,234,234,56  4
-                 * 111,222,333,456,44  4  hu
-                 * 123,123,123,456,44  4  hu
-                 * 111,222,345,33,44,6 no
-                 *
-                  */
-            }
-        }
-
-
-
-
-
-        List<Integer> keys = player.keys;
-        List<Group> groups = player.groups;
-        //找出顺子和刻子
-        if (keys.size() < 3) return;
-        Integer base = null;
-        boolean same = false;
-        int count = 1;
-        for (int key : keys) {//2,true,
-            if (base == null || base + 1 < key) {//1,1,4,4
-                base = key;
-                count = 1;//必须的
-            } else if (base == key) {//1,1,4,4
-                if (same) count++;
-                else {
-                    count = 2;
-                    same = true;
-                }
-            } else if (base + 1 == key) {
-                base = key;
-                if (same) {
-                    count = 2;
-                    same = false;
-                } else count++;
-            } else throw new RuntimeException("base: " + base + ", key:  " + key);
-            if (count == 3) {
-                groups.add(same ?
-                        new Group.Same(base)//刻子
-                        :
-                        new Group.Series(base));//顺子
-                base = null;
-            }
-        }
     }
 }

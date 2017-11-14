@@ -1,5 +1,7 @@
 package ai2;
 
+import makeTable.Shape;
+
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;

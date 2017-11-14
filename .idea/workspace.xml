@@ -2,20 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60958dcf-1326-4cd7-b613-44de10eae873" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai/Judge$Combination.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai/Judge$Combination.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ai/Server.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/makeTable/Maker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/makeTable/Map.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/makeTable/Printer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/makeTable/ShapeParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/makeTable/Table.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/Shape.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ai2/Shape.java" afterPath="$PROJECT_DIR$/src/makeTable/Shape.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai/Brain.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai/Brain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai/Judge.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai/Judge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai/Player.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose3.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose4.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose5.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose6.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/Compose6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/EnumGroup.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/EnumGroup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/ai2/SevenPairs.class" afterPath="$PROJECT_DIR$/out/production/MahJong/ai2/SevenPairs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/algorithm/AlgorithmImp.class" afterPath="$PROJECT_DIR$/out/production/MahJong/algorithm/AlgorithmImp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/Constant.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/Constant.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/Group$$Same.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/Group$$Same.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/Group$Same.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/Group$Same.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/Group$Series.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/Group$Series.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/Group.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/Group.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/card/StackCard.class" afterPath="$PROJECT_DIR$/out/production/MahJong/card/StackCard.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MahJong/other/AgariIndex.class" afterPath="$PROJECT_DIR$/out/production/MahJong/other/AgariIndex.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table" afterPath="$PROJECT_DIR$/table" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Compose" afterPath="$PROJECT_DIR$/Compose" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/copy" afterPath="$PROJECT_DIR$/copy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myTable" afterPath="$PROJECT_DIR$/myTable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai/Brain.java" afterPath="$PROJECT_DIR$/src/ai/Brain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai/Judge.java" afterPath="$PROJECT_DIR$/src/ai/Judge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai/Player.java" afterPath="$PROJECT_DIR$/src/ai/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose.java" afterPath="$PROJECT_DIR$/src/ai2/Compose.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose2.java" afterPath="$PROJECT_DIR$/src/ai2/Compose2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose3.java" afterPath="$PROJECT_DIR$/src/ai2/Compose3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose4.java" afterPath="$PROJECT_DIR$/src/ai2/Compose4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose5.java" afterPath="$PROJECT_DIR$/src/ai2/Compose5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/Compose6.java" afterPath="$PROJECT_DIR$/src/ai2/Compose6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/EnumGroup.java" afterPath="$PROJECT_DIR$/src/ai2/EnumGroup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ai2/SevenPairs.java" afterPath="$PROJECT_DIR$/src/ai2/SevenPairs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithm/AlgorithmImp.java" afterPath="$PROJECT_DIR$/src/algorithm/AlgorithmImp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/card/Constant.java" afterPath="$PROJECT_DIR$/src/card/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/card/Group.java" afterPath="$PROJECT_DIR$/src/card/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/card/StackCard.java" afterPath="$PROJECT_DIR$/src/card/StackCard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/other/AgariIndex.java" afterPath="$PROJECT_DIR$/src/other/AgariIndex.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,99 +55,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SevenPairs.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ai2/SevenPairs.java">
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/card/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="583">
+              <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ai/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#117#148#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="method#removeSameCard#0;class#Player#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnumGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ai2/EnumGroup.java">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="9" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/9">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="120">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compose6.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ai2/Compose6.java">
+      <file leaf-file-name="Painter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/Painter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6908">
-              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-              <folding>
-                <element signature="e#5246#5252#0" expanded="false" />
-                <element signature="e#6834#6835#0" expanded="true" />
-                <element signature="e#6882#6883#0" expanded="true" />
-                <element signature="e#8151#8183#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgariIndex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/AgariIndex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Compose" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Compose">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6948">
-              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8250" column="46" lean-forward="false" selection-start-line="8250" selection-start-column="37" selection-end-line="8250" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myTable" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myTable">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="1108" column="8" lean-forward="false" selection-start-line="1108" selection-start-column="8" selection-end-line="1108" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/Test4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="32">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,12 +113,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compare.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/Compare.java">
+      <file leaf-file-name="Graphics2D.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Graphics2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="29850">
+              <caret line="1029" column="25" lean-forward="false" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JComponent.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/javax/swing/JComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5370">
+              <caret line="243" column="36" lean-forward="false" selection-start-line="243" selection-start-column="36" selection-end-line="243" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ai/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/DataModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ai/MyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,24 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\{\n([^{\}\n]++\n){3,}\}</find>
-      <find>\d++\{\n([^{\}\n]++\n){3,}\}</find>
-      <find>(?:\d++\{\n([^{\}\n]++\n){3,}\}\n){1,}</find>
-      <find>(?:\d++\{\n([^{\}\n]++\n){3,}\}\n?){1,}</find>
-      <find>(?:\d++\{\n([^{\}\n]++\n){1,}\}\n){3,}</find>
-      <find>(?:\d++\{\n([^{\}\n]++\n){1,}\}\n){2,}</find>
-      <find>(?:\d++\{\n([^{\}\n]++\n){2,}\}\n){2,}</find>
-      <find>25</find>
-      <find>35</find>
-      <find>large</find>
-      <find>13</find>
-      <find>12</find>
-      <find>14</find>
-      <find>1[4-9]</find>
-      <find>\d[4-9]</find>
-      <find>\b\d[4-9]\b</find>
-      <find>\{\}</find>
-      <find>\{(?:0x\d++,?){1,}\}</find>
       <find>\{(?:0x\d++,? ?){2,}\}</find>
       <find>0x10c8440</find>
       <find>\{(?:0x\d++,? ?){4,}\}</find>
@@ -179,6 +198,24 @@
       <find>0x1db6db</find>
       <find>edb777</find>
       <find>0x4000000</find>
+      <find>\Qmap.put</find>
+      <find>init</find>
+      <find>init\d</find>
+      <find>\[\d++, {1}</find>
+      <find>\[(?:\d++, ){9}</find>
+      <find>二萬</find>
+      <find>一萬</find>
+      <find>八索</find>
+      <find>北</find>
+      <find>伍萬</find>
+      <find>四索 伍索 八索 九索 三筒 伍筒 六筒 七筒 九筒 東 南 中 中 ai.Player@61bbe9ba</find>
+      <find>Player\(</find>
+      <find>碰</find>
+      <find>七萬</find>
+      <find>四萬</find>
+      <find>九索</find>
+      <find>四索</find>
+      <find>translate</find>
     </findStrings>
     <replaceStrings>
       <replace>latestKey</replace>
@@ -199,31 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/card/KeyAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/ai/Judger.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/Search.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/Algorithm.java" />
-        <option value="/RegExp Fragment (Judge.java:718).regexp" />
-        <option value="$PROJECT_DIR$/2" />
-        <option value="$PROJECT_DIR$/3" />
-        <option value="/RegExp Fragment (AgariIndex.java:1828).regexp" />
-        <option value="$PROJECT_DIR$/src/other/AgariBacktrack.java" />
-        <option value="$PROJECT_DIR$/4" />
-        <option value="$PROJECT_DIR$/7.2" />
-        <option value="$PROJECT_DIR$/7.1" />
-        <option value="$PROJECT_DIR$/7.3" />
-        <option value="$PROJECT_DIR$/7.4" />
-        <option value="$PROJECT_DIR$/src/card/Face.java" />
-        <option value="$PROJECT_DIR$/src/ai/Brain.java" />
-        <option value="$PROJECT_DIR$/src/ai2/Test.java" />
-        <option value="$PROJECT_DIR$/src/other/Test.java" />
-        <option value="$PROJECT_DIR$/src/other/Test2.java" />
-        <option value="$PROJECT_DIR$/8" />
-        <option value="$PROJECT_DIR$/compose" />
-        <option value="$PROJECT_DIR$/allSeries.old" />
-        <option value="$PROJECT_DIR$/src/other/Test3.java" />
-        <option value="$PROJECT_DIR$/twoSeries" />
-        <option value="$PROJECT_DIR$/src/ai2/Compose4.java" />
         <option value="$PROJECT_DIR$/src/ai2/Compose3.java" />
         <option value="$PROJECT_DIR$/src/ai2/Compose.java" />
         <option value="$PROJECT_DIR$/src/ai2/Compose2.java" />
@@ -239,17 +251,42 @@
         <option value="$PROJECT_DIR$/9" />
         <option value="$PROJECT_DIR$/hash" />
         <option value="$PROJECT_DIR$/table" />
-        <option value="$PROJECT_DIR$/src/algorithm/AlgorithmImp.java" />
-        <option value="$PROJECT_DIR$/src/card/Group.java" />
         <option value="$PROJECT_DIR$/src/other/Compare.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Compose6.java" />
         <option value="$PROJECT_DIR$/copy" />
         <option value="$PROJECT_DIR$/src/ai2/EnumGroup.java" />
-        <option value="$PROJECT_DIR$/src/ai/Judge.java" />
         <option value="$PROJECT_DIR$/src/other/AgariIndex.java" />
-        <option value="$PROJECT_DIR$/Compose" />
         <option value="$PROJECT_DIR$/src/ai2/Compose6.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/MakeTable.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/HashTable.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/Table.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/TableMaker.java" />
+        <option value="$PROJECT_DIR$/Table.java" />
+        <option value="$PROJECT_DIR$/Compose" />
         <option value="$PROJECT_DIR$/src/ai2/SevenPairs.java" />
+        <option value="$PROJECT_DIR$/Map.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/Maker.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/Printer.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/Map.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/AlgorithmImp.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/Shape.java" />
+        <option value="$PROJECT_DIR$/src/makeTable/ShapeParser.java" />
+        <option value="$PROJECT_DIR$/src/ai/Brain.java" />
+        <option value="$PROJECT_DIR$/src/ai/Referee.java" />
+        <option value="$PROJECT_DIR$/src/ai/Judge.java" />
+        <option value="$PROJECT_DIR$/src/card/StackCard.java" />
+        <option value="$PROJECT_DIR$/src/card/Group.java" />
+        <option value="$PROJECT_DIR$/src/ai/Controller.java" />
+        <option value="$PROJECT_DIR$/src/ai/MyController.java" />
+        <option value="$PROJECT_DIR$/src/card/Constant.java" />
+        <option value="$PROJECT_DIR$/src/ai/Server.java" />
+        <option value="$PROJECT_DIR$/src/ui/Window.java" />
+        <option value="$PROJECT_DIR$/src/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/ai/Player.java" />
+        <option value="$PROJECT_DIR$/src/ui/Painter.java" />
+        <option value="$PROJECT_DIR$/src/UI/Painter.java" />
+        <option value="$PROJECT_DIR$/src/data/Painter.java" />
+        <option value="$PROJECT_DIR$/src/data/DataModel.java" />
       </list>
     </option>
   </component>
@@ -260,9 +297,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="288" />
-    <option name="y" value="-31" />
-    <option name="width" value="1546" />
+    <option name="x" value="212" />
+    <option name="y" value="-34" />
+    <option name="width" value="1543" />
     <option name="height" value="931" />
   </component>
   <component name="ProjectView">
@@ -280,10 +317,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,18 +335,26 @@
               <item name="MahJong" type="b2602c69:ProjectViewProjectNode" />
               <item name="MahJong" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ai2" type="462c0819:PsiDirectoryNode" />
+              <item name="ai" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MahJong" type="b2602c69:ProjectViewProjectNode" />
               <item name="MahJong" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MahJong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MahJong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,11 +364,12 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="last.edited.regexp" value="{" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\E\Desktop\mjSet\1\MahJong\src\makeTable" />
       <recent name="C:\Users\E\Desktop\MahJong\src" />
       <recent name="C:\Users\E\Desktop\MahJong\lib" />
     </key>
@@ -342,15 +386,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Compose6">
-    <configuration name="AgariIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Painter">
+    <configuration name="Constant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="other.*" />
+          <option name="PATTERN" value="card.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="other.AgariIndex" />
+      <option name="MAIN_CLASS_NAME" value="card.Constant" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -362,14 +406,14 @@
       <module name="MahJong" />
       <envs />
     </configuration>
-    <configuration name="Compare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DataModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="other.*" />
+          <option name="PATTERN" value="data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="other.Compare" />
+      <option name="MAIN_CLASS_NAME" value="ui.data.DataModel" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -381,14 +425,14 @@
       <module name="MahJong" />
       <envs />
     </configuration>
-    <configuration name="Compose6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Painter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ai2.*" />
+          <option name="PATTERN" value="data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ai2.Compose6" />
+      <option name="MAIN_CLASS_NAME" value="data.Painter" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -400,14 +444,14 @@
       <module name="MahJong" />
       <envs />
     </configuration>
-    <configuration name="Judge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ai.Judge" />
+      <option name="MAIN_CLASS_NAME" value="ai.Server" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -419,14 +463,14 @@
       <module name="MahJong" />
       <envs />
     </configuration>
-    <configuration name="SevenPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ShapeParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ai2.*" />
+          <option name="PATTERN" value="makeTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ai2.SevenPairs" />
+      <option name="MAIN_CLASS_NAME" value="makeTable.ShapeParser" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -519,19 +563,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Compose6" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AgariIndex" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SevenPairs" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Compare" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Judge" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ShapeParser" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Constant" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Server" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DataModel" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Painter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Compose6" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SevenPairs" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AgariIndex" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Judge" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Compare" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Painter" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DataModel" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Constant" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ShapeParser" />
       </list>
     </recent_temporary>
   </component>
@@ -577,64 +621,57 @@
       <workItem from="1509675570036" duration="604000" />
       <workItem from="1509706006089" duration="4000" />
       <workItem from="1509802716825" duration="5202000" />
+      <workItem from="1509934027142" duration="33000" />
+      <workItem from="1509965704501" duration="61000" />
+      <workItem from="1510022682522" duration="30000" />
+      <workItem from="1510039698764" duration="2411000" />
+      <workItem from="1510109271878" duration="20581000" />
+      <workItem from="1510208652445" duration="10871000" />
+      <workItem from="1510279321644" duration="11000" />
+      <workItem from="1510338001918" duration="26000" />
+      <workItem from="1510387609451" duration="82000" />
+      <workItem from="1510566573116" duration="14150000" />
+      <workItem from="1510627194681" duration="12846000" />
+      <workItem from="1510662430651" duration="1737000" />
+      <workItem from="1510664240960" duration="1353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260192000" />
+    <option name="totallyTimeSpent" value="324550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19259259" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.628752" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35343915" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32508072" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16557017" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.628752" sideWeight="0.50292826" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43311402" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21587302" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.628752" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09478673" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1295754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32336655" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,129 +682,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/allSeries.new" />
-    <entry file="file://$PROJECT_DIR$/threeSeries.new" />
-    <entry file="file://$PROJECT_DIR$/twoSeries.new" />
-    <entry file="file://$PROJECT_DIR$/src/ai2/Compose2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneSeries.new" />
-    <entry file="file://$PROJECT_DIR$/src/ai2/Compose3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5075">
-          <caret line="291" column="20" lean-forward="false" selection-start-line="291" selection-start-column="20" selection-end-line="291" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1215#1256#0" expanded="false" />
-            <element signature="method#removeLast#0;class#Compose3#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ai2/Compose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="226" column="6" lean-forward="false" selection-start-line="226" selection-start-column="6" selection-end-line="226" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneSeries" />
-    <entry file="file://$PROJECT_DIR$/twoSeries" />
-    <entry file="file://$PROJECT_DIR$/threeSeries" />
-    <entry file="file://$PROJECT_DIR$/allSames" />
-    <entry file="file://$PROJECT_DIR$/allSeries" />
-    <entry file="file://$PROJECT_DIR$/4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="234" column="43" lean-forward="false" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="215" column="8" lean-forward="false" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/AgariBacktrack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/8">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9362" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_101/src.zip!/java/util/HashMap.java" />
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_101/src.zip!/java/util/HashSet.java" />
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_101/src.zip!/java/lang/Integer.java" />
-    <entry file="file://$PROJECT_DIR$/src/other/Test3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ai2/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/card/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#1318#1319#0" expanded="false" />
-            <element signature="e#1385#1386#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/card/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -786,9 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,27 +720,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/key/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/other/Compare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/Compose6.java" />
     <entry file="file://$PROJECT_DIR$/src/ai2/Compose5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myTable2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -828,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,98 +742,312 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/AlgorithmImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ai/Judge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="84" column="74" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ai2/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="2984" column="23" lean-forward="false" selection-start-line="2984" selection-start-column="23" selection-end-line="2984" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myTable">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="1108" column="8" lean-forward="false" selection-start-line="1108" selection-start-column="8" selection-end-line="1108" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ai2/EnumGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/AgariIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
+        <state relative-caret-position="1584">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/Compare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTable">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39888">
+          <caret line="1108" column="8" lean-forward="false" selection-start-line="1108" selection-start-column="8" selection-end-line="1108" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTable2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="136" column="40" lean-forward="true" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
+        <state relative-caret-position="497">
           <caret line="8250" column="46" lean-forward="false" selection-start-line="8250" selection-start-column="37" selection-end-line="8250" selection-end-column="46" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ai2/Compose6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6908">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#5246#5252#0" expanded="false" />
-            <element signature="e#6834#6835#0" expanded="true" />
-            <element signature="e#6882#6883#0" expanded="true" />
-            <element signature="e#8151#8183#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Compose">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6948">
-          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="165" column="23" lean-forward="false" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ai2/SevenPairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="146">
+          <caret line="55" column="52" lean-forward="false" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compose">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="9404" column="0" lean-forward="false" selection-start-line="9404" selection-start-column="0" selection-end-line="9404" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai2/EnumGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/AlgorithmImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hu/Hu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/Judge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/ShapeParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6420">
+          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/card/StackCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/card/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/Brain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#106#107#0" expanded="false" />
+            <element signature="e#142#143#0" expanded="false" />
+            <element signature="e#184#185#0" expanded="false" />
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+            <element signature="e#272#273#0" expanded="false" />
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="3024" column="0" lean-forward="false" selection-start-line="3024" selection-start-column="0" selection-end-line="3024" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makeTable/Maker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6150">
+          <caret line="260" column="27" lean-forward="false" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/MyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#117#148#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="method#removeSameCard#0;class#Player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5370">
+          <caret line="243" column="36" lean-forward="false" selection-start-line="243" selection-start-column="36" selection-end-line="243" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Graphics2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29850">
+          <caret line="1029" column="25" lean-forward="false" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/card/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/Painter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ai/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/DataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
