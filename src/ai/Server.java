@@ -35,7 +35,7 @@ public class Server {
                 return;
             } else {
                 switch (msg.type) {
-                    case Group.Other://打牌
+                    case Group.Poll://打牌
                         List<Player.Msg>[] listen = listen(msg.x, msg.who, false);
                         if (!listen[0].isEmpty()) {//点了其他玩家的炮
                             for (Player.Msg m : listen[0]) {
@@ -86,14 +86,7 @@ public class Server {
         }
     }
 
-    private void show() {
-        System.out.println("---------------start----------------");
 
-        for (int i = 0; i < players.size(); i++) {
-            players.get(i).show2();
-        }
-        System.out.println("---------------end----------------");
-    }
 
     private List<Player.Msg>[] listen(int x, Player cur, boolean qiangGang) {//第三个参数，代表是否抢杠
         List<Player.Msg>[] sortedMsgs = new List[3];//胡，明杠，碰
@@ -123,7 +116,7 @@ public class Server {
             Player player = players.get(i);
             player.setNext(players.get((i + 1) % players.size()));
             if (i == 0) {
-                player.setController(new MyController(player, new Scanner(System.in)));
+                player.setController(new ConsoleController(player, new Scanner(System.in)));
             }else
             player.setController(new Controller(player));
         }

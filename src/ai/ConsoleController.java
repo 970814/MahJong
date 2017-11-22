@@ -4,9 +4,9 @@ import card.Constant;
 
 import java.util.Scanner;
 
-public class MyController extends Controller {
+public class ConsoleController extends Controller {
     Scanner scanner;
-    public MyController(Player player, Scanner scanner) {
+    public ConsoleController(Player player, Scanner scanner) {
         super(player);
         this.scanner = scanner;
     }
@@ -18,14 +18,15 @@ public class MyController extends Controller {
         do {
             String word = scanner.next();
             try {
-                index = Integer.parseInt(word);
+                index = Integer.parseInt(word);//按索引位置
             } catch (Exception e) {
-                e.printStackTrace();
-                int key = Constant.get(word);
+                int key;
+                System.out.println("try to parse an key: " + word);
+                key = Constant.get(word);
                 index = player.keys.indexOf(key);
                 if (index == -1) break;
             }
-            if (index >= 0 && index < size) break;
+            if (index >= -1 && index < size) break;
             else System.out.println("不存在这张牌");
         } while (true);
         return index;

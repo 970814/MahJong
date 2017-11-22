@@ -3,12 +3,13 @@ package card;
 import ai.Player;
 
 public abstract class Group {//一就牌
-    public static final int Other = 0;
-    public static final int Peng = Other + 1;
+    public static final int Poll = 0;
+    public static final int Peng = Poll + 1;
     public static final int MingGang = Peng + 1;
     public static final int BiaoGang = MingGang + 1;
     public static final int AnGang = BiaoGang + 1;
     public static final int CardIsEmpty = AnGang + 1;
+    public static final int Offer = CardIsEmpty + 1;
     protected int key;
 
     public Group(int key) {

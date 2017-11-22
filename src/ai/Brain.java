@@ -22,18 +22,32 @@ public class Brain {
 
     }
 
-    public Message analysis(Player player, int key) {//听牌
+    public Message analysis(Player player, int key, boolean isListen) {//听牌
         int[] h34 = player.h34;
         Message message = new Message();
         h34[key]++;
         message.hu = ShapeParser.parse(h34);
-        h34[key]--;
-        for (int i = h34.length - 1; i >= 0; i--)
-            if (i == key && (h34[i] == 2 || h34[i] == 3)) {//可碰可明杠
-                message.key = key;
-                message.isPeng = h34[i] == 2;//手上2张牌则为碰，否则为明杠
-                break;//立即停止判断
+        if (isListen) {//听牌 碰或明杠
+            h34[key]--;
+            for (int i = h34.length - 1; i >= 0; i--)
+                if (i == key && (h34[i] == 2 || h34[i] == 3)) {//可碰可明杠
+                    message.key = key;
+                    message.isPeng = h34[i] == 2;//手上2张牌则为碰，否则为明杠
+                    break;//立即停止判断
+                }
+        } else {//自摸  表杠或暗杠
+            List<Group> groups = player.groups;
+            for (int i = h34.length - 1; i >= 0; i--) {
+                if (h34[i] == 1)//看看能不能表杠
+                    for (int j = 0, groupsSize = groups.size(); j < groupsSize; j++) {
+                        Group group = groups.get(j);
+                        if (group.getKey() == i & group instanceof Group.Same)
+                            message.addGang(j);//表杠为groups索引
+                    }
+                if (h34[i] == 4)//看看能不能暗杠
+                    message.addGang(-(i + 1));//暗杠为牌值
             }
+        }
         return message;
     }
 
@@ -53,17 +67,15 @@ public class Brain {
         List<Group> groups = player.groups;
         Message message = new Message();
         message.hu = ShapeParser.parse(h34);
-        for (int key = h34.length - 1; key >= 0; key--) {
-            //看看能不能表杠
-            if (h34[key] == 1)
-                for (int i = 0, groupsSize = groups.size(); i < groupsSize; i++) {
-                    Group group = groups.get(i);
-                    if (group.getKey() == key & group instanceof Group.Same)
-                        message.addGang(i);
+        for (int i = h34.length - 1; i >= 0; i--) {
+            if (h34[i] == 1)//看看能不能表杠
+                for (int j = 0, groupsSize = groups.size(); j < groupsSize; j++) {
+                    Group group = groups.get(j);
+                    if (group.getKey() == i & group instanceof Group.Same)
+                        message.addGang(j);
                 }
-            //看看能不能暗杠
-            if (h34[key] == 4)
-                message.addGang(-(key + 1));
+            if (h34[i] == 4)//看看能不能暗杠
+                message.addGang(-(i + 1));
         }
         return message;
     }
