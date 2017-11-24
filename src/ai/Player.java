@@ -6,9 +6,7 @@ import card.StackCard;
 import hu.Hu;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
+import java.util.*;
 import java.util.List;
 
 public class Player {
@@ -42,6 +40,7 @@ public class Player {
         groups.clear();
         pendingKey = Empty;
         Arrays.fill(h34, 0);
+        pollKeys.clear();
 
         //reset controller
         pressed2 = null;
@@ -135,9 +134,10 @@ public class Player {
     }
 
     public int pollCard() {//出牌
-        int index = controller.poll(keys.size());//由控制器来决定出哪一张牌
+        int size = keys.size();
+        int index = controller.poll(size);//由控制器来决定出哪一张牌
         int key;
-        if (index == -1) {
+        if (index >= size) {
             key = pendingKey;
             pendingKey = Empty;
         } else {
@@ -149,6 +149,7 @@ public class Player {
         }
         h34[key]--;
         System.out.println(name + " poll " + Constant.get(key));
+        pollKeys.add(key);
         return key;
     }
 
@@ -265,7 +266,12 @@ public class Player {
     public Point movePoint;
     public Point pressedPoint;
     public int selectedKey = Empty;
-    public boolean pre = false;
     public Point pressed2;
     public boolean selected;
+    public List<Integer> pollKeys = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

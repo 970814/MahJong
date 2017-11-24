@@ -1,6 +1,9 @@
 package ai;
 
+import java.util.Random;
+
 public class Controller {
+    private final static Random random = new Random();
     protected Player player;
     public Controller(Player player) {
         this.player = player;
@@ -8,7 +11,12 @@ public class Controller {
 
     //打牌
     public int poll(int size) {
-        return 0;
+        try {
+            Thread.sleep(100 + random.nextInt(100));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return random.nextInt(size + 1);//随机
     }
 
     //是否胡
